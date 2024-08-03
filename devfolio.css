@@ -1,0 +1,560 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+   background-color: rgb(245, 243, 243);
+   position: relative;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    height: 100vh;
+    background-color: var(--background-color);
+    
+
+
+}
+
+:root{
+    --nav-background-color:rgba(0, 0, 0, 0.808) ;
+    --font-color:rgb(255, 255, 255) ;
+--hover-font-color:rgba(255, 0, 21, 0.842);
+--font-weight:900 ;
+--Portfolio-font-size:1.5em ;
+--background-color:rgba(0, 0, 0, 0.911) ;
+--devfolio-font-color:rgba(255, 0, 21, 0.842);
+}
+
+.wrapper .xNav {
+    width:100% ;
+    display: flex;
+justify-content: flex-end;
+}
+.wrapper .xNav .rightNavMenu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    background-color:var();
+}
+.wrapper .xNav .rightNavMenu li{
+    width: 100%;
+    text-align: center;
+ color:white;
+ 
+    
+    
+}
+.wrapper ul li :hover{
+    cursor: pointer;
+
+    background-color:var(--hover-font-color);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+}
+
+.wrapper .xNav  .rightNav{
+    display: flex;
+    justify-content: flex-end;
+    width:100% ;
+    background-color: var(--nav-background-color);
+    height: 50px;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+.wrapper .xNav  .rightNav .myPortfolio{
+    position: absolute;
+    left: 0;
+    font-weight: var(--font-weight);
+    font-size: var(--Portfolio-font-size);
+
+}
+.wrapper .xNav  .rightNav .myPortfolio li{
+
+    color: var(--font-color);
+}
+.wrapper .xNav  .rightNav .myPortfolio li b{
+    color: var(--hover-font-color);
+}
+.wrapper .xNav  .rightNav .myPortfolio li b:hover{
+    background-color: rgba(255, 0, 0, 0);
+}
+.wrapper .xNav .rightNav li{
+text-align: center; 
+    list-style: none;
+   
+}
+
+.wrapper  li a{
+  
+    width: 100%;
+    padding: 10px 10px;
+}
+.wrapper  li a{
+    width: 100%;
+    color: var(--font-color);
+    text-decoration: none;    
+    text-transform: capitalize;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.wrapper .yNav{
+
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    background-color:var(--nav-background-color);
+    position: absolute;
+    height: 100vh;
+backdrop-filter: blur(10px);
+display: none;
+width: 200px;
+}
+
+
+
+.wrapper .yNav .leftNav{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+
+
+position: relative;
+}
+.wrapper .yNav  .leftNav .myPortfolioLeftNav{
+position: absolute;
+bottom: 0;
+
+color: var(--font-color);
+font-size: var(--Portfolio-font-size);
+font-weight: var(--font-weight);
+
+}
+.wrapper .yNav  .leftNav .myPortfolioLeftNav b{
+    color: var(--hover-font-color);
+}
+.wrapper .yNav  .leftNav .myPortfolioLeftNav b:hover{
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.wrapper .yNav .leftNav li{
+   width: 100%;
+   margin-top: 30px;
+   list-style: none;
+   text-align: center;
+    
+}
+.parentMyImgDiv{
+    
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*phone screen*/
+@media (max-width:600px){
+    .parentMyImgDiv{
+        flex-direction: column;
+        
+    }
+    .parentMyImgDiv .myImgDiv{
+display: flex;
+        justify-content: center;
+        
+        
+        }
+        .parentMyImgDiv .myImgDiv img{
+            width: 300px;
+            height: 400px;
+        }
+}
+
+/*desktop screen*/
+
+
+.parentMyImgDiv .writeUp{
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+font-weight: var(--font-weight);
+
+}
+.parentMyImgDiv .writeUp h1{
+     text-transform: capitalize;
+font-size: 2em;     
+}
+.parentMyImgDiv .writeUp h1 b{
+    color: var(--devfolio-font-color);
+}
+.parentMyImgDiv .myImgDiv{
+display: flex;
+align-items: center;
+
+}
+.parentMyImgDiv .writeUp h2{
+    
+    text-align: center;
+    animation-name:emoji;
+    font-size:2em ;
+    animation-direction: 200ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes emoji {
+    50%{
+        transform: rotateY(360deg);
+    }
+
+}
+
+.parentMyImgDiv .writeUp .button{
+padding:10px;
+border-radius:50px ;
+border: solid var(--hover-font-color) 2px;
+background: none;
+color: var(--font-color);
+margin-top: 10px;    
+text-transform: capitalize;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+}
+
+
+
+.parentMyImgDiv .writeUp button:active{
+    background-color: var(--hover-font-color);
+}
+.parentMyImgDiv .myImgDiv img{
+
+width:300px;
+height: 400PX;
+border-radius:200px ;
+
+}
+.contactMeUlDiv{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.contactMeUl{
+    display: flex;
+
+    justify-content: center;
+    align-items: center; 
+}
+
+.contactMeUl li{
+    list-style: none;
+    margin: 20px;
+}
+
+.backToTop{
+     
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: var(--hover-font-color);
+    z-index: 99;
+    right:20px ;
+    bottom: 20px;
+    position: fixed;
+    visibility:none ;
+    opacity:0 ;
+    transition: 1s;
+}
+.backToTopShow{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+
+}
+/*phone screen*/
+@media (max-width:600px) {
+    .wrapper .xNav  .rightNav{
+    display: none;
+   
+    }
+   
+
+    @media (max-width:400px) {
+        .wrapper .yNav {
+            width: 100%;
+
+        }
+        .section3SecondPage{
+      
+            margin-bottom: 20px;
+        }
+
+    }
+@media (max-width:600px) {
+    .wrapper .xNav {
+        
+        background-color:var(--nav-background-color);
+    }
+    .parentMyImgDiv .writeUp h1{
+        text-align: center;
+        
+   
+    }
+    .parentMyImgDiv .writeUp p{
+text-align: center;
+    }
+    .parentMyImgDiv .myImgDiv img{
+        width: 200px;
+        height: 200px;
+    }
+    .serviceDiv .serviceDivWrapperForWriteUp{
+   display: flex;
+   justify-content: center;
+   
+    }
+
+    .writeUpDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .writeUpDiv div{
+        background-color: var(--nav-background-color);
+        border-radius: 10px;
+         
+        width: 90%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+       box-shadow: 2px 2px 10px;
+    
+    }
+     .writeUpDiv h2{
+        text-align: center;
+        color: var(--font-color);
+
+    }
+    .writeUpDiv p{
+        color: var(--font-color);
+        text-align: center;
+
+    }
+    .writeUpDiv b{
+        color: var(--hover-font-color);
+        text-align: start;
+        text-transform: capitalize;
+        
+    }
+}
+
+
+
+@media (max-width:1000px){
+    .writeUpDiv{
+        flex-wrap: wrap;
+        
+    }
+    .section3SecondPage{
+      
+        margin-bottom: 10px;
+    }
+
+    
+}
+
+
+}
+
+/* desktop screen*/
+@media (min-width:500px) {
+    .wrapper .yNav {
+        width: 50%;
+        
+    }
+}
+
+@media (min-width:600px) {
+
+    .wrapper .xNav .rightNavMenu{
+        display: none;
+    
+}
+ 
+.serviceDiv .serviceDivWrapperForWriteUp{
+    display: flex;
+    justify-content: center;
+    
+     }
+
+ 
+     .writeUpDiv{
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         justify-content: center;
+         align-items: center;
+        
+         
+     }
+     .writeUpDiv div{
+         background-color: var(--nav-background-color);
+         border-radius: 10px;
+          
+         width: 90%;
+         height: 200px;
+         display: flex;
+         flex-direction: column;
+         
+         justify-content: center;
+        box-shadow: 2px 2px 10px;
+     
+     }
+      
+     .writeUpDiv p{
+         color: var(--font-color);
+         text-align: center;
+ 
+     }
+     .writeUpDiv b{
+         color: var(--hover-font-color);
+         text-align: start;
+         text-transform: capitalize;
+         
+     }
+
+
+}
+
+.serviceDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.serviceDiv h1{
+    text-transform: uppercase;
+    color: var(--hover-font-color);
+   margin-top:10px ;
+    
+}
+
+.serviceDiv h2{
+    text-transform: capitalize;
+    color: var(--font-color);
+
+    font-weight:  var(--font-weight);
+    margin-bottom: 10px;
+  
+}
+
+
+.displaySection{
+    
+        visibility: visible;
+        opacity: 1;
+        transition: 1s;
+    
+    
+}
+.writeUpDiv div{
+    margin: 0px;
+}
+
+.section3SecondPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.section4 .GetInTouchDiv{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: var(--nav-background-color);
+}
+footer .copyRight p{
+    text-align: center;
+    color: var(--font-color);
+    margin-bottom: 10px;
+}
+
+/*.section4 .GetInTouchDiv h2{
+    text-transform: capitalize;
+    color: var(--font-color);
+}
+
+#contactForm{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 200px;
+    border-radius:30px ;
+    
+    background-color: var(--background-color);
+}
+
+#contactForm .formGroup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#contactForm .formGroup input{
+    width:80% ;
+ background-color: hsla(0, 0%, 100%, 0.342);   
+ border: none;
+ padding: 5px;
+}
+input::placeholder{
+    color: white;
+}
+textarea::placeholder{
+    color: white;
+}
+#message{
+    width: 80%;
+    height: 50px;
+    background-color: hsla(0, 0%, 100%, 0.342);
+}
+#contactForm  button{
+    border: none;
+    padding: 10px;
+    
+    
+}
+
+#contactForm  button:hover{
+    background-color: var(--hover-font-color);
+    cursor: pointer;
+}*/
